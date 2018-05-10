@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/pushy.css">
+    <link rel="stylesheet" href="css/jquery.navgoco.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="pushy pushy-left">
+        <ul class="list">
+            <li><a href="">Главная</a></li>
+            <li><a href="">Акции</a></li>
+            <li><a href="">Детские шапки</a></li>
+            <li><a href="">Колготки</a></li>
+            <li><a href="">Перчатки</a></li>
+            <li><a href="">Варежки</a></li>
+            <li><a href="">Комбинезоны</a></li>
+        </ul>
+        <ul class="list list2">
+            <li><a href="">О компании</a></li>
+            <li><a href="">Условия работы</a></li>
+            <li><a href="">Новости</a></li>
+            <li><a href="">Акции</a></li>
+            <li><a href="">Контаты</a></li>
+        </ul>
+    </nav>
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+    <div class="wraper" id="container">
+        <header>
+            <div class="container">
+                <div class="header">
+                    <ul class="head_nav">
+                        <li><a href="">О компании</a></li>
+                        <li><a href="">Условия работы</a></li>
+                        <li><a href="">Новости</a></li>
+                        <li><a href="">Акции</a></li>
+                        <li><a href="">Контаты</a></li>
+                    </ul>
+                    <div class="socials">
+                        <a href="">
+                            <svg viewBox="0 0 512.002 512.002">
+                                <g>
+                                    <path d="M512.002,97.211c-18.84,8.354-39.082,14.001-60.33,16.54c21.686-13,38.342-33.585,46.186-58.115
+									c-20.299,12.039-42.777,20.78-66.705,25.49c-19.16-20.415-46.461-33.17-76.674-33.17c-58.011,0-105.042,47.029-105.042,105.039
+									c0,8.233,0.929,16.25,2.72,23.939c-87.3-4.382-164.701-46.2-216.509-109.753c-9.042,15.514-14.223,33.558-14.223,52.809
+									c0,36.444,18.544,68.596,46.73,87.433c-17.219-0.546-33.416-5.271-47.577-13.139c-0.01,0.438-0.01,0.878-0.01,1.321
+									c0,50.894,36.209,93.348,84.261,103c-8.813,2.399-18.094,3.687-27.674,3.687c-6.769,0-13.349-0.66-19.764-1.888
+									c13.368,41.73,52.16,72.104,98.126,72.949c-35.95,28.176-81.243,44.967-130.458,44.967c-8.479,0-16.84-0.496-25.058-1.471
+									c46.486,29.807,101.701,47.197,161.021,47.197c193.211,0,298.868-160.062,298.868-298.872c0-4.554-0.104-9.084-0.305-13.59
+									C480.111,136.775,497.92,118.275,512.002,97.211z" />
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg viewBox="0 0 96 96">
+                                <g>
+                                    <path d="M53.174,52.908c-1.539-0.896-3.678-0.896-5.416-0.896h-5.707v11.76h5.238
+								c1.939,0,4.412,0.139,6.084-1.035c1.535-1.033,2.404-3.061,2.404-4.992C55.777,55.951,54.709,53.805,53.174,52.908z M51.021,42.865
+								c1.27-0.967,1.936-2.691,1.936-4.279c0-1.725-0.801-3.381-2.27-4.277c-1.537-0.896-4.346-0.689-6.15-0.689h-2.486v10.35h3.289
+								C47.211,43.969,49.418,44.107,51.021,42.865z M79.125,0H16.873C7.555,0,0,7.555,0,16.875v62.25C0,88.443,7.555,96,16.873,96h62.252
+								C88.443,96,96,88.443,96,79.125v-62.25C96,7.555,88.443,0,79.125,0z M50.604,72.535H30.992V25.201H52.42
+								c6.207,0,11.934,3.951,11.934,10.92c0,5.381-3.004,9.066-6.836,10.211v0.139c5.682,1.174,9.74,4.26,9.74,11.705
+								C67.258,65.066,62.566,72.535,50.604,72.535z" />
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg viewBox="0 0 96.124 96.123">
+                                <g>
+                                    <path d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803
+									c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654
+									c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246
+									c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z" />
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg viewBox="0 0 97.395 97.395">
+                                <g>
+                                    <path d="M12.501,0h72.393c6.875,0,12.5,5.09,12.5,12.5v72.395c0,7.41-5.625,12.5-12.5,12.5H12.501C5.624,97.395,0,92.305,0,84.895
+									V12.5C0,5.09,5.624,0,12.501,0L12.501,0z M70.948,10.821c-2.412,0-4.383,1.972-4.383,4.385v10.495c0,2.412,1.971,4.385,4.383,4.385
+									h11.008c2.412,0,4.385-1.973,4.385-4.385V15.206c0-2.413-1.973-4.385-4.385-4.385H70.948L70.948,10.821z M86.387,41.188h-8.572
+									c0.811,2.648,1.25,5.453,1.25,8.355c0,16.2-13.556,29.332-30.275,29.332c-16.718,0-30.272-13.132-30.272-29.332
+									c0-2.904,0.438-5.708,1.25-8.355h-8.945v41.141c0,2.129,1.742,3.872,3.872,3.872h67.822c2.13,0,3.872-1.742,3.872-3.872V41.188
+									H86.387z M48.789,29.533c-10.802,0-19.56,8.485-19.56,18.953c0,10.468,8.758,18.953,19.56,18.953
+									c10.803,0,19.562-8.485,19.562-18.953C68.351,38.018,59.593,29.533,48.789,29.533z" />
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg viewBox="0 0 95.481 95.481">
+                                <g>
+                                    <g>
+                                        <path d="M43.041,67.254c-7.402-0.772-14.076-2.595-19.79-7.064c-0.709-0.556-1.441-1.092-2.088-1.713
+										c-2.501-2.402-2.753-5.153-0.774-7.988c1.693-2.426,4.535-3.075,7.489-1.682c0.572,0.27,1.117,0.607,1.639,0.969
+										c10.649,7.317,25.278,7.519,35.967,0.329c1.059-0.812,2.191-1.474,3.503-1.812c2.551-0.655,4.93,0.282,6.299,2.514
+										c1.564,2.549,1.544,5.037-0.383,7.016c-2.956,3.034-6.511,5.229-10.461,6.761c-3.735,1.448-7.826,2.177-11.875,2.661
+										c0.611,0.665,0.899,0.992,1.281,1.376c5.498,5.524,11.02,11.025,16.5,16.566c1.867,1.888,2.257,4.229,1.229,6.425
+										c-1.124,2.4-3.64,3.979-6.107,3.81c-1.563-0.108-2.782-0.886-3.865-1.977c-4.149-4.175-8.376-8.273-12.441-12.527
+										c-1.183-1.237-1.752-1.003-2.796,0.071c-4.174,4.297-8.416,8.528-12.683,12.735c-1.916,1.889-4.196,2.229-6.418,1.15
+										c-2.362-1.145-3.865-3.556-3.749-5.979c0.08-1.639,0.886-2.891,2.011-4.014c5.441-5.433,10.867-10.88,16.295-16.322
+										C42.183,68.197,42.518,67.813,43.041,67.254z" />
+                                        <path d="M47.55,48.329c-13.205-0.045-24.033-10.992-23.956-24.218C23.67,10.739,34.505-0.037,47.84,0
+										c13.362,0.036,24.087,10.967,24.02,24.478C71.792,37.677,60.889,48.375,47.55,48.329z M59.551,24.143
+										c-0.023-6.567-5.253-11.795-11.807-11.801c-6.609-0.007-11.886,5.316-11.835,11.943c0.049,6.542,5.324,11.733,11.896,11.709
+										C54.357,35.971,59.573,30.709,59.551,24.143z" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="registration mob_reg">
+                        <a href="">Вход</a>
+                        <span>/</span>
+                        <a href=""> Регистрация</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="top_wrap">
+            <div class="container">
+                <div class="top">
+                    <div class="tel_block">
+                        <div class="icons_wrap clear">
+                            <span><img src="img/speech-bubble.svg" alt=""></span>
+                            <span><img src="img/phone-call.svg" alt=""></span>
+                            <a href="mailto:info@nikulya.ru" class="email">info@nikulya.ru</a>
+                        </div>
+                        <a href="tel:89266101814" class="tel">8 (926) 610-18-14</a>
+                        <a href="tel:84956653449" class="tel">8 (495) 665-34-49</a>
+                    </div>
+                    <div class="tel_block">
+                        <div class="icons_wrap clear">
+                            <span><img src="img/speech-bubble.svg" alt=""></span>
+                            <span><img src="img/phone-call.svg" alt=""></span>
+                        </div>
+                        <a href="tel:89165106634" class="tel">8 (916) 510-66-34</a>
+                        <a href="tel:84956653449" class="callback">Обратный звонок</a>
+                    </div>
+                    <a href="" class="logo">Вероника </a>
+                    <div class="registration">
+                        <a href="">Вход</a>
+                        <span>/</span>
+                        <a href=""> Регистрация</a>
+                    </div>
+                    <div class="basket">
+                        <div class="circle">7</div>
+                        <a href="">Ваши товары</a>
+                        <p>на сумму: <span>55 990</span> руб.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar_wrap">
+            <div class="container">
+                <div class="navbar">
+                    <button class="menu-btn">Меню</button>
+                    <ul class="navi">
+                        <li><a href="">Главная</a></li>
+                        <li><a href="">Акции</a></li>
+                        <li><a href="">Детские шапки</a></li>
+                        <li><a href="">Колготки</a></li>
+                        <li><a href="">Перчатки</a></li>
+                        <li><a href="">Варежки</a></li>
+                        <li><a href="">Комбинезоны</a></li>
+                    </ul>
+                    <a href="" class="search">
+                        <svg viewBox="0 0 56.966 56.966">
+                            <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+                            <g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="top_slider_wrap">
+            <div class="container">
+                <div class="top_slider">
+                    <div class="swiper-container swiper-container1 ">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background: url(img/top_slide.png) no-repeat top center; -webkit-background-size: cover; background-size: cover; ">
+                                <div class="slide_content">
+                                    <div class="sale">
+                                        <p>SALE</p>
+                                        <span>распродажа</span>
+                                    </div>
+                                    <div class="sale_percent">
+                                        <div class="percent">%</div>
+                                        <div class="until">до</div>
+                                        70
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" style="background: url(img/top_slide.png) no-repeat top center; -webkit-background-size: cover; background-size: cover; ">
+                                <div class="slide_content">
+                                    <div class="sale">
+                                        <p>SALE</p>
+                                        <span>распродажа</span>
+                                    </div>
+                                    <div class="sale_percent">
+                                        <div class="percent">%</div>
+                                        <div class="until">до</div>
+                                        70
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" style="background: url(img/top_slide.png) no-repeat top center; -webkit-background-size: cover; background-size: cover; ">
+                                <div class="slide_content">
+                                    <div class="sale">
+                                        <p>SALE</p>
+                                        <span>распродажа</span>
+                                    </div>
+                                    <div class="sale_percent">
+                                        <div class="percent">%</div>
+                                        <div class="until">до</div>
+                                        70
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" style="background: url(img/top_slide.png) no-repeat top center; -webkit-background-size: cover; background-size: cover; ">
+                                <div class="slide_content">
+                                    <div class="sale">
+                                        <p>SALE</p>
+                                        <span>распродажа</span>
+                                    </div>
+                                    <div class="sale_percent">
+                                        <div class="percent">%</div>
+                                        <div class="until">до</div>
+                                        70
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" style="background: url(img/top_slide.png) no-repeat top center; -webkit-background-size: cover; background-size: cover; ">
+                                <div class="slide_content">
+                                    <div class="sale">
+                                        <p>SALE</p>
+                                        <span>распродажа</span>
+                                    </div>
+                                    <div class="sale_percent">
+                                        <div class="percent">%</div>
+                                        <div class="until">до</div>
+                                        70
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination swiper-pagination1"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="season_wrap">
+            <div class="container">
+                <div class="season">
+                    <div class="season_items">
+                        <a href="" class="season_item">
+                            <div class="season_border">
+                                <p>зима</p>
+                                <div class="season_img"><img src="img/season1.png" alt=""></div>
+                            </div>
+                        </a>
+                        <a href="" class="season_item">
+                            <div class="season_border">
+                                <p>весна</p>
+                                <div class="season_img"><img src="img/season2.png" alt=""></div>
+                            </div>
+                        </a>
+                        <a href="" class="season_item">
+                            <div class="season_border">
+                                <p>лето</p>
+                                <div class="season_img"><img src="img/season3.png" alt=""></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gift_wrap">
+            <div class="container">
+                <div class="gift">
+                    <div class="komb">
+                        Зимний
+                        <br> Комбинезон
+                        <br> “Barbaras”
+                    </div>
+                    <div class="gift_img"><img src="img/gift.png" alt=""></div>
+                    <div class="gift_count">
+                        <p>ПОЛУЧИТЕ ПОДАРОК </p>
+                        <span>Совершив заказ на 25 000 руб.</span>
+                        <script src="http://megatimer.ru/s/2c36befcd650f5f29684b95f105ae478.js"></script>
+                        <div>осталось до конца акции</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brands_wrap">
+            <div class="container">
+                <div class="brands">
+                    <h2>Бренды</h2>
+                    <div class="brands_slider">
+                        <div class="swiper-container swiper-container2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="img/brand1.png" alt=""></div>
+                                <div class="swiper-slide"><img src="img/brand2.png" alt=""></div>
+                                <div class="swiper-slide"><img src="img/brand3.png" alt=""></div>
+                                <div class="swiper-slide"><img src="img/brand4.png" alt=""></div>
+                                <div class="swiper-slide"><img src="img/brand5.png" alt=""></div>
+                                <div class="swiper-slide"><img src="img/brand6.png" alt=""></div>
+                                <div class="swiper-slide"><img src="img/brand1.png" alt=""></div>
+                                <div class="swiper-slide"><img src="img/brand2.png" alt=""></div>
+                                <div class="swiper-slide"><img src="img/brand3.png" alt=""></div>
+                                <div class="swiper-slide"><img src="img/brand4.png" alt=""></div>
+                                <div class="swiper-slide"><img src="img/brand5.png" alt=""></div>
+                            </div>
+
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next swiper-button-next2"></div>
+                        <div class="swiper-button-prev swiper-button-prev2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="collection_wrap">
+            <div class="container">
+                <div class="collection">
+                    <h2>Новая коллекция</h2>
+                    <div class="collection_slider">
+                        <div class="swiper-container swiper-container3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="" class="col_item">
+                                        <div class="col_img">
+                                            <div class="col_sale">скидка 25%</div>
+                                            <img src="img/col_1.png" alt="">
+                                        </div>
+                                        <div class="col_desc">
+                                            <p>Колготки, Rewon</p>
+                                            <span>цена за 50 шт.</span>
+                                            <div class="col_price">12 800<span>руб.</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="col_item">
+                                        <div class="col_img">
+                                            <div class="col_sale">скидка 25%</div>
+                                            <img src="img/col_2.png" alt="">
+                                        </div>
+                                        <div class="col_desc">
+                                            <p>Колготки, Rewon</p>
+                                            <span>цена за 50 шт.</span>
+                                            <div class="col_price">12 800<span>руб.</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="col_item">
+                                        <div class="col_img">
+                                            <div class="col_sale">скидка 25%</div>
+                                            <img src="img/col_3.png" alt="">
+                                        </div>
+                                        <div class="col_desc">
+                                            <p>Колготки, Rewon</p>
+                                            <span>цена за 50 шт.</span>
+                                            <div class="col_price">12 800<span>руб.</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="col_item">
+                                        <div class="col_img">
+                                            <div class="col_sale">скидка 25%</div>
+                                            <img src="img/col_4.png" alt="">
+                                        </div>
+                                        <div class="col_desc">
+                                            <p>Колготки, Rewon</p>
+                                            <span>цена за 50 шт.</span>
+                                            <div class="col_price">12 800<span>руб.</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="col_item">
+                                        <div class="col_img">
+                                            <div class="col_sale">скидка 25%</div>
+                                            <img src="img/col_1.png" alt="">
+                                        </div>
+                                        <div class="col_desc">
+                                            <p>Колготки, Rewon</p>
+                                            <span>цена за 50 шт.</span>
+                                            <div class="col_price">12 800<span>руб.</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="col_item">
+                                        <div class="col_img">
+                                            <div class="col_sale">скидка 25%</div>
+                                            <img src="img/col_3.png" alt="">
+                                        </div>
+                                        <div class="col_desc">
+                                            <p>Колготки, Rewon</p>
+                                            <span>цена за 50 шт.</span>
+                                            <div class="col_price">12 800<span>руб.</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="col_item">
+                                        <div class="col_img">
+                                            <div class="col_sale">скидка 25%</div>
+                                            <img src="img/col_2.png" alt="">
+                                        </div>
+                                        <div class="col_desc">
+                                            <p>Колготки, Rewon</p>
+                                            <span>цена за 50 шт.</span>
+                                            <div class="col_price">12 800<span>руб.</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="col_item">
+                                        <div class="col_img">
+                                            <div class="col_sale">скидка 25%</div>
+                                            <img src="img/col_1.png" alt="">
+                                        </div>
+                                        <div class="col_desc">
+                                            <p>Колготки, Rewon</p>
+                                            <span>цена за 50 шт.</span>
+                                            <div class="col_price">12 800<span>руб.</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="col_item">
+                                        <div class="col_img">
+                                            <div class="col_sale">скидка 25%</div>
+                                            <img src="img/col_4.png" alt="">
+                                        </div>
+                                        <div class="col_desc">
+                                            <p>Колготки, Rewon</p>
+                                            <span>цена за 50 шт.</span>
+                                            <div class="col_price">12 800<span>руб.</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="col_item">
+                                        <div class="col_img">
+                                            <div class="col_sale">скидка 25%</div>
+                                            <img src="img/col_1.png" alt="">
+                                        </div>
+                                        <div class="col_desc">
+                                            <p>Колготки, Rewon</p>
+                                            <span>цена за 50 шт.</span>
+                                            <div class="col_price">12 800<span>руб.</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="col_item">
+                                        <div class="col_img">
+                                            <div class="col_sale">скидка 25%</div>
+                                            <img src="img/col_1.png" alt="">
+                                        </div>
+                                        <div class="col_desc">
+                                            <p>Колготки, Rewon</p>
+                                            <span>цена за 50 шт.</span>
+                                            <div class="col_price">12 800<span>руб.</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next swiper-button-next3"></div>
+                        <div class="swiper-button-prev swiper-button-prev3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="benefits_wrap">
+            <div class="container">
+                <div class="benefits">
+                    <div class="ben_items">
+                        <div class="ben_item">
+                            <div class="ben_icon"><img src="img/ben_ico1.png" alt=""></div>
+                            <p>Бесплатная
+                                <br> доставка от 5 000 руб</p>
+                            <span>Доставка товара в большинство населенных пунктов России бесплатна*</span>
+                        </div>
+                        <div class="ben_item">
+                            <div class="ben_icon"><img src="img/ben_ico2.png" alt=""></div>
+                            <p>Консультация
+                                <br> профессионала</p>
+                            <span>У нас работают высоко квалифицированные сотрудники которые ответят на любой вопрос</span>
+                        </div>
+                        <div class="ben_item">
+                            <div class="ben_icon"><img src="img/ben_ico3.png" alt=""></div>
+                            <p>Весь товар
+                                <br> в наличии</p>
+                            <span>Весь представленный у нас ассортимент, есть в наличии в большом количестве</span>
+                        </div>
+                        <div class="ben_item">
+                            <div class="ben_icon"><img src="img/ben_ico4.png" alt=""></div>
+                            <p>Только оригинальная
+                                <br> продукция</p>
+                            <span>Мы гарантируем подлинность товара, что подтверждается сертификатами</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about_comp_wrap">
+            <div class="container">
+                <div class="about_comp">
+                    <h2>О компании</h2>
+                    <div class="type_text">
+                        <p><strong>Все представленные товары на “Вероника.ru” – это абсолютные оригиналы, которые приобретаются у официальных дистрибьюторов и отличаются высоким качеством. Большее количество товаров мы храним на собственном складе, который постоянно пополняется. Это позволяет нам оперативно выполнять ваши заказы. Мы крупнейший в России интернет-магазин, представляющий более 55 000 товаров и 1200 подлинных мировых брендов.</strong></p>
+                        <br>
+                        <p>Все представленные товары на “Вероника.ru” – это абсолютные оригиналы, которые приобретаются у официальных дистрибьюторов и отличаются высоким качеством. Большее количество товаров мы храним на собственном складе, который постоянно пополняется. Это позволяет нам оперативно выполнять ваши заказы. Мы крупнейший в России интернет-магазин, представляющий более 55 000 товаров и 1200 подлинных мировых брендов.</p>
+                        <br>
+                        <p>Все представленные товары на “Вероника.ru” – это абсолютные оригиналы, которые приобретаются у официальных дистрибьюторов и отличаются высоким качеством. Большее количество товаров мы храним на собственном складе, который постоянно пополняется. Это позволяет нам оперативно выполнять ваши заказы. Мы крупнейший в России интернет-магазин, представляющий более 55 000 товаров и 1200 подлинных мировых брендов.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="footer">
+                    <div class="footer_top">
+                        <div class="foot_col">
+                            <p>Помощь</p>
+                            <ul>
+                                <li><a href="">Заказ товара на сайте</a></li>
+                                <li><a href="">Доставка товара</a></li>
+                                <li><a href="">Как оплатить товар</a></li>
+                            </ul>
+                        </div>
+                        <div class="foot_col">
+                            <p>Информация</p>
+                            <ul>
+                                <li><a href="">Как выбрать одежду</a></li>
+                                <li><a href="">Гарантии</a></li>
+                            </ul>
+                        </div>
+                        <div class="foot_col">
+                            <p>О компании</p>
+                            <ul>
+                                <li><a href="">Что такое «Вероника»?</a></li>
+                                <li><a href="">Доставка товара</a></li>
+                                <li><a href="">Как оплатить товар</a></li>
+                            </ul>
+                        </div>
+                        <div class="foot_col">
+                            <p>Помощь</p>
+                            <div class="socials">
+                                <a href="">
+                                    <svg viewBox="0 0 512.002 512.002">
+                                        <g>
+                                            <path d="M512.002,97.211c-18.84,8.354-39.082,14.001-60.33,16.54c21.686-13,38.342-33.585,46.186-58.115
+											c-20.299,12.039-42.777,20.78-66.705,25.49c-19.16-20.415-46.461-33.17-76.674-33.17c-58.011,0-105.042,47.029-105.042,105.039
+											c0,8.233,0.929,16.25,2.72,23.939c-87.3-4.382-164.701-46.2-216.509-109.753c-9.042,15.514-14.223,33.558-14.223,52.809
+											c0,36.444,18.544,68.596,46.73,87.433c-17.219-0.546-33.416-5.271-47.577-13.139c-0.01,0.438-0.01,0.878-0.01,1.321
+											c0,50.894,36.209,93.348,84.261,103c-8.813,2.399-18.094,3.687-27.674,3.687c-6.769,0-13.349-0.66-19.764-1.888
+											c13.368,41.73,52.16,72.104,98.126,72.949c-35.95,28.176-81.243,44.967-130.458,44.967c-8.479,0-16.84-0.496-25.058-1.471
+											c46.486,29.807,101.701,47.197,161.021,47.197c193.211,0,298.868-160.062,298.868-298.872c0-4.554-0.104-9.084-0.305-13.59
+											C480.111,136.775,497.92,118.275,512.002,97.211z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a href="">
+                                    <svg viewBox="0 0 96 96">
+                                        <g>
+                                            <path d="M53.174,52.908c-1.539-0.896-3.678-0.896-5.416-0.896h-5.707v11.76h5.238
+										c1.939,0,4.412,0.139,6.084-1.035c1.535-1.033,2.404-3.061,2.404-4.992C55.777,55.951,54.709,53.805,53.174,52.908z M51.021,42.865
+										c1.27-0.967,1.936-2.691,1.936-4.279c0-1.725-0.801-3.381-2.27-4.277c-1.537-0.896-4.346-0.689-6.15-0.689h-2.486v10.35h3.289
+										C47.211,43.969,49.418,44.107,51.021,42.865z M79.125,0H16.873C7.555,0,0,7.555,0,16.875v62.25C0,88.443,7.555,96,16.873,96h62.252
+										C88.443,96,96,88.443,96,79.125v-62.25C96,7.555,88.443,0,79.125,0z M50.604,72.535H30.992V25.201H52.42
+										c6.207,0,11.934,3.951,11.934,10.92c0,5.381-3.004,9.066-6.836,10.211v0.139c5.682,1.174,9.74,4.26,9.74,11.705
+										C67.258,65.066,62.566,72.535,50.604,72.535z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a href="">
+                                    <svg viewBox="0 0 96.124 96.123">
+                                        <g>
+                                            <path d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803
+										c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654
+										c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246
+										c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a href="">
+                                    <svg viewBox="0 0 97.395 97.395">
+                                        <g>
+                                            <path d="M12.501,0h72.393c6.875,0,12.5,5.09,12.5,12.5v72.395c0,7.41-5.625,12.5-12.5,12.5H12.501C5.624,97.395,0,92.305,0,84.895
+										V12.5C0,5.09,5.624,0,12.501,0L12.501,0z M70.948,10.821c-2.412,0-4.383,1.972-4.383,4.385v10.495c0,2.412,1.971,4.385,4.383,4.385
+										h11.008c2.412,0,4.385-1.973,4.385-4.385V15.206c0-2.413-1.973-4.385-4.385-4.385H70.948L70.948,10.821z M86.387,41.188h-8.572
+										c0.811,2.648,1.25,5.453,1.25,8.355c0,16.2-13.556,29.332-30.275,29.332c-16.718,0-30.272-13.132-30.272-29.332
+										c0-2.904,0.438-5.708,1.25-8.355h-8.945v41.141c0,2.129,1.742,3.872,3.872,3.872h67.822c2.13,0,3.872-1.742,3.872-3.872V41.188
+										H86.387z M48.789,29.533c-10.802,0-19.56,8.485-19.56,18.953c0,10.468,8.758,18.953,19.56,18.953
+										c10.803,0,19.562-8.485,19.562-18.953C68.351,38.018,59.593,29.533,48.789,29.533z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a href="">
+                                    <svg viewBox="0 0 95.481 95.481">
+                                        <g>
+                                            <g>
+                                                <path d="M43.041,67.254c-7.402-0.772-14.076-2.595-19.79-7.064c-0.709-0.556-1.441-1.092-2.088-1.713
+											c-2.501-2.402-2.753-5.153-0.774-7.988c1.693-2.426,4.535-3.075,7.489-1.682c0.572,0.27,1.117,0.607,1.639,0.969
+											c10.649,7.317,25.278,7.519,35.967,0.329c1.059-0.812,2.191-1.474,3.503-1.812c2.551-0.655,4.93,0.282,6.299,2.514
+											c1.564,2.549,1.544,5.037-0.383,7.016c-2.956,3.034-6.511,5.229-10.461,6.761c-3.735,1.448-7.826,2.177-11.875,2.661
+											c0.611,0.665,0.899,0.992,1.281,1.376c5.498,5.524,11.02,11.025,16.5,16.566c1.867,1.888,2.257,4.229,1.229,6.425
+											c-1.124,2.4-3.64,3.979-6.107,3.81c-1.563-0.108-2.782-0.886-3.865-1.977c-4.149-4.175-8.376-8.273-12.441-12.527
+											c-1.183-1.237-1.752-1.003-2.796,0.071c-4.174,4.297-8.416,8.528-12.683,12.735c-1.916,1.889-4.196,2.229-6.418,1.15
+											c-2.362-1.145-3.865-3.556-3.749-5.979c0.08-1.639,0.886-2.891,2.011-4.014c5.441-5.433,10.867-10.88,16.295-16.322
+											C42.183,68.197,42.518,67.813,43.041,67.254z" />
+                                                <path d="M47.55,48.329c-13.205-0.045-24.033-10.992-23.956-24.218C23.67,10.739,34.505-0.037,47.84,0
+											c13.362,0.036,24.087,10.967,24.02,24.478C71.792,37.677,60.889,48.375,47.55,48.329z M59.551,24.143
+											c-0.023-6.567-5.253-11.795-11.807-11.801c-6.609-0.007-11.886,5.316-11.835,11.943c0.049,6.542,5.324,11.733,11.896,11.709
+											C54.357,35.971,59.573,30.709,59.551,24.143z" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="tel_block">
+                            <div class="icons_wrap clear">
+                                <span><img src="img/speech-bubble.svg" alt=""></span>
+                                <span><img src="img/phone-call.svg" alt=""></span>
+                                <a href="mailto:info@nikulya.ru" class="email">info@nikulya.ru</a>
+                            </div>
+                            <a href="tel:89266101814" class="tel">8 (926) 610-18-14</a>
+                            <a href="tel:84956653449" class="tel">8 (495) 665-34-49</a>
+                        </div>
+                    </div>
+                    <div class="footer_bottom">
+                        <div class="fb_left">
+                            <div class="copyright">© 2010-2017 <span>| Вероника</span></div>
+                            <p>Все права защищены. тел. (400) 888-4889 mail. info@veronika.ru</p>
+                            <p>Любое копирование информации не для нашего промо запрещены без письменного разрешения.</p>
+                        </div>
+                        <div class="pay_systems">
+                            <a href=""><img src="img/Qiwi_logo.svg" alt=""></a>
+                            <a href=""><img src="img/wmlogo_flat_256.png" alt=""></a>
+                            <a href=""><img src="img/logo-yandex-money.png" alt=""></a>
+                            <a href=""><img src="img/master.png" alt=""></a>
+                            <a href=""><img src="img/sberbank.png" alt=""></a>
+                            <a href=""><img src="img/visa.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/jquery.formstyler.min.js"></script>
+        <script src="js/jquery.navgoco.min.js"></script>
+        <script src="js/pushy.min.js"></script>
+        <script src="js/main.js"></script>
+</body>
+
+</html>
